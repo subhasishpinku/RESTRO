@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:id="@+id/gsts.parentRelative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/gsts.chooseExpandMenu"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/editText_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_between_two"
+                android:entries="@array/select_expand"
+                android:prompt="@string/app_name"
+                android:spinnerMode="dropdown" />
+
+            <!--For group-->
+            <RelativeLayout
+                android:id="@+id/gsts.groupLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gsts.chooseExpandMenu"
+                android:layout_marginTop="@dimen/margin_between_two"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/gsts.headerGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_header"
+                    android:text="@string/group_name"
+                    android:textColor="@color/headerColor"
+                    android:textSize="@dimen/header_text_size" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="@dimen/margin_header"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/down_arrow"
+                    android:id="@+id/gsts.groupArrow"
+                    android:onClick="onGroupArrow"/>
+
+                <View
+                    android:id="@+id/gsts.groupLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/gsts.headerGroup"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gsts.groupRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gsts.groupLine"
+                    android:layout_margin="5dp"
+                    android:scrollbars="vertical" />
+
+            </RelativeLayout>
+
+            <!--For sub group-->
+            <RelativeLayout
+                android:id="@+id/gsts.subGroupLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gsts.groupLayout"
+                android:layout_marginTop="@dimen/margin_between_two"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="@dimen/margin_header"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/down_arrow"
+                    android:id="@+id/gsts.subGroupArrow"
+                    android:onClick="onSubGroupArrow"/>
+
+                <TextView
+                    android:id="@+id/gsts.headerSubGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_header"
+                    android:text="@string/sub_group_name"
+                    android:textColor="@color/headerColor"
+                    android:textSize="@dimen/header_text_size" />
+
+                <View
+                    android:id="@+id/gsts.subGroupLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/gsts.headerSubGroup"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gsts.subGroupRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gsts.subGroupLine"
+                    android:layout_margin="5dp"
+                    android:scrollbars="vertical" />
+
+            </RelativeLayout>
+
+            <!--For type-->
+            <RelativeLayout
+                android:id="@+id/gsts.typeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gsts.subGroupLayout"
+                android:layout_marginTop="@dimen/margin_between_two"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/gsts.headerType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_header"
+                    android:text="@string/type_name"
+                    android:textColor="@color/headerColor"
+                    android:textSize="@dimen/header_text_size"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="@dimen/margin_header"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/down_arrow"
+                    android:id="@+id/gsts.typeArrow"
+                    android:onClick="onTypeArrow"/>
+
+                <View
+                    android:id="@+id/gsts.typeLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/gsts.headerType"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gsts.typeRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gsts.typeLine"
+                    android:layout_margin="5dp"
+                    android:scrollbars="vertical" />
+
+            </RelativeLayout>
+
+            <!--For sub type-->
+            <RelativeLayout
+                android:id="@+id/gsts.subTypeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gsts.typeLayout"
+                android:layout_marginTop="@dimen/margin_between_two"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/gsts.headerSubType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_header"
+                    android:text="@string/sub_type_name"
+                    android:textColor="@color/headerColor"
+                    android:textSize="@dimen/header_text_size" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="@dimen/margin_header"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/down_arrow"
+                    android:id="@+id/gsts.subTypeArrow"
+                    android:onClick="onSubTypeArrow"/>
+
+                <View
+                    android:id="@+id/gsts.subTypeLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/gsts.headerSubType"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gsts.subTypeRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gsts.subTypeLine"
+                    android:layout_margin="5dp"
+                    android:scrollbars="vertical" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

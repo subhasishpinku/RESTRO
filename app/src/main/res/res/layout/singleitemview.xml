@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" />
+    <TextView  android:id="@+id/tablenum"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#32cd32"
+        android:text="Tablnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv"/>
+    <TextView android:id="@+id/kotnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#32cd32"
+        android:textStyle="bold"
+        android:text="Kotnumber"
+        android:textSize="19sp"
+        android:layout_below="@id/tablenum"
+        android:layout_toRightOf="@id/iv" />
+    <!--<TextView    android:id="@+id/item"-->
+    <!--android:textSize="19sp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textColor="#32cd32"-->
+    <!--android:text=""-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/kotnumber"-->
+    <!--android:layout_toRightOf="@id/iv" />-->
+
+    <TextView    android:id="@+id/itemdescr"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#32cd32"
+        android:text="Itemdescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kotnumber"
+        android:layout_toRightOf="@id/iv" />
+    <TextView    android:id="@+id/qty"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#32cd32"
+        android:text="Qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemdescr"
+        android:layout_alignTop="@+id/kotnumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/rate"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#32cd32"
+        android:text="Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qty"
+        android:layout_alignTop="@+id/itemdescr"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!--<TextView    android:id="@+id/textPrice"-->
+    <!--android:textSize="19sp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textColor="#32cd32"-->
+    <!--android:text=""-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/rate"-->
+    <!--android:layout_toRightOf="@id/iv" />-->
+
+    <!--<TextView    android:id="@+id/update"-->
+    <!--android:textSize="19sp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textColor="#32cd32"-->
+    <!--android:text=""-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/textPrice"-->
+    <!--android:layout_toRightOf="@id/iv" />-->
+</RelativeLayout>

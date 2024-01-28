@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="220dp"
+    android:layout_height="@dimen/cardview_heightt"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardElevation="@dimen/card_elevation"
+    card_view:cardMaxElevation="6dp"
+    android:id="@+id/cardview"
+    card_view:cardBackgroundColor="@color/headerColor"
+    card_view:cardCornerRadius="@dimen/corner_radius"
+    >
+
+    <!--<FrameLayout
+        android:background="@drawable/rounded_corner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+            />
+        <Button
+            android:id="@+id/cardmenu.tableName"
+            android:layout_width="@dimen/circle_whhhh_new"
+            android:layout_height="@dimen/circle_whhhh_new"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle_green"
+            android:text="SP"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/buttonTextSize" />
+
+        <TextView
+            android:id="@+id/cardmenu.tableCategory"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="110dp"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/cardmenu.tableName"
+            android:layout_marginTop="@dimen/margin_between_two"
+            android:gravity="center"
+            android:text="Content here"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/editTextSize" />
+
+
+        <TextView
+            android:id="@+id/cardmenu.tableid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/cardmenu.tableCategory"
+            android:gravity="center"
+            android:text="Content here"
+            android:textSize="0dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

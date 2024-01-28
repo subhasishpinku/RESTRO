@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+
+        android:id="@+id/table2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/test_button_text23"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tablerow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:background="@drawable/border"
+                android:gravity="left"
+                android:text="TABLENUM"
+                android:textStyle="bold" />
+
+
+            <TextView
+
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="KOTNUMBER"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="ITEMCD"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="ITEMDESCR"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="QTY"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="RATE"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="VALUE"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="UPDATE"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tablerow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tablenum"
+                android:background="@drawable/border"
+                android:gravity="left"
+                android:text="TABLENUM"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/kotnumber"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="KOTNUMBER"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="ITEMCD"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/itemdescr"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="ITEMDESCR"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/qty"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="QTY"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rate"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="RATE"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textPrice"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="VALUE"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/update"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="COLNAME"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

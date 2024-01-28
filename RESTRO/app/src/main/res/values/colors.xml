@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+    <color name="headerColor">#179EDE</color>
+    <color name="transparentColor">#00000000</color>
+    <color name="circle_red">#b70f0c</color>
+    <color name="circle_green">#167a06</color>
+    <color name="semi_tranparent">#80179EDE</color>
+</resources>

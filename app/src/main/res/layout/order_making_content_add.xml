@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ebits.restro.activities.OrderTakingActivity"
+    tools:showIn="@layout/order_making_parent">
+
+    <FrameLayout
+        android:id="@+id/orderContainer"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <include    layout="@layout/order_making_menu_recycler_add"></include>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/itemContainer"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <include    layout="@layout/order_making_menu_search_recycler_add"></include>
+    </FrameLayout>
+
+</LinearLayout>

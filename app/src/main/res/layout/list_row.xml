@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/cardview_whh"
+    android:layout_height="@dimen/cardview_whh"
+    android:id="@+id/frame_layout_item"
+    android:layout_margin="5dp"
+    android:background="@color/colorAccent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="@dimen/circle_whhh"
+            android:layout_height="@dimen/circle_whhh"
+            android:id="@+id/cardmenu.tableName"
+            android:background="@drawable/circle_green"
+            android:textSize="@dimen/buttonTextSize"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="SP"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/text"
+            android:layout_below="@id/cardmenu.tableName"
+            android:layout_marginTop="@dimen/margin_between_two"
+            android:text="Content here"
+            android:textSize="@dimen/editTextSize1"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/cardmenu.tableid"
+            android:layout_below="@id/cardmenu.tableCategory"
+            android:text="Content here"
+            android:textSize="0dp"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

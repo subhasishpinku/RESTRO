@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/orderMaking.coordinator">
+
+    <LinearLayout
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/padding_drawable"
+        android:orientation="horizontal"
+        android:background="@color/headerColor"
+        android:id="@+id/orderMaking.topLinear">
+
+
+        <Button
+            android:layout_width="@dimen/btn_menu_height"
+            android:layout_height="@dimen/btn_menu_height"
+            android:id="@+id/orderMaking.sortUp"
+            android:background="@drawable/sort_up"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_border"/>
+
+        <Button
+            android:layout_width="@dimen/btn_menu_height"
+            android:layout_height="@dimen/btn_menu_height"
+            android:id="@+id/orderMaking.sortDown"
+            android:background="@drawable/sort_down"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_border"/>
+
+        <Button
+            android:layout_width="@dimen/btn_menu_height"
+            android:layout_height="@dimen/btn_menu_height"
+            android:id="@+id/orderMaking.describeItem"
+            android:background="@drawable/describebtn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_border"/>
+
+        <Button
+            android:layout_width="@dimen/btn_menu_height"
+            android:layout_height="@dimen/btn_menu_height"
+            android:id="@+id/orderMaking.addItem"
+            android:background="@drawable/billpaybtn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_border"/>
+
+        <Button
+            android:layout_width="@dimen/btn_menu_height"
+            android:layout_height="@dimen/btn_menu_height"
+            android:id="@+id/orderMaking.copyBtn"
+            android:background="@drawable/cbtn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_border"/>
+
+        <Button
+            android:layout_width="@dimen/btn_menu_height"
+            android:layout_height="@dimen/btn_menu_height"
+            android:id="@+id/orderMaking.editBtn"
+            android:background="@drawable/editbtn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_border"/>
+
+        <Button
+            android:layout_width="@dimen/btn_menu_height"
+            android:layout_height="@dimen/btn_menu_height"
+            android:id="@+id/orderMaking.deleteBtn"
+            android:background="@drawable/deletebtn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_border"/>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

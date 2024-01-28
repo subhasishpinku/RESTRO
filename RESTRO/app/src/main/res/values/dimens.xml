@@ -1,0 +1,52 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_drawer_width">260dp</dimen>
+
+    <!-- Navigation Drawer -->
+    <dimen name="drawer_header_layout_height">140dp</dimen>
+    <dimen name="drawer_circular_image">80dp</dimen>
+    <dimen name="drawer_margin_left">15dp</dimen>
+    <dimen name="drawer_margin_left2">10dp</dimen>
+    <dimen name="drawer_civ_border">2dp</dimen>
+    <dimen name="drawer_drawable_padding">5dp</dimen>
+    <dimen name="drawer_textview_size">20sp</dimen>
+
+    <!-- For Login Screen-->
+    <dimen name="header_height">150dp</dimen>
+    <dimen name="header_text_size">30sp</dimen>
+    <dimen name="margin_header">10dp</dimen>
+    <dimen name="margin_form_section">20dp</dimen>
+    <dimen name="margin_editText">15dp</dimen>
+    <dimen name="editTextSize">18sp</dimen>
+    <dimen name="padding_drawable">10dp</dimen>
+    <dimen name="margin_between_two">10dp</dimen>
+    <dimen name="editText_height">45dp</dimen>
+    <dimen name="buttonTextSize">25sp</dimen>
+    <dimen name="checkboxTextSize">18sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- For Card View Section-->
+    <dimen name="corner_radius">10dp</dimen>
+    <dimen name="padding_border">4dp</dimen>
+    <dimen name="circle_wh">65dp</dimen>
+    <dimen name="cardview_wh">165dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+
+    <!-- For Order making section -->
+    <dimen name="btn_menu_height">35dp</dimen>
+    <dimen name="cardview_height">160dp</dimen>
+    <dimen name="remarks_height">50dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="button_text_size">30sp</dimen>
+    <dimen name="cardview_order_making">120dp</dimen>
+    <dimen name="detail_backdrop_height">250dp</dimen>
+    <dimen name="drawer_circular_image2">50dp</dimen>
+
+    <!-- For Group, Sub Group, Type, Sub Type Screen-->
+    <dimen name="header2_text_size">25sp</dimen>
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_drawable"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/foodOrder.relativeLayout">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/foodOrder.linerLayout"
+            android:background="@drawable/border"
+            android:weightSum="2.90"
+            android:gravity="left"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"/>
+
+            <ImageButton
+                android:id="@+id/foodOrder.RemarkCancleBtn"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1."
+                android:background="@color/headerColor"
+                android:onClick="onCancleRemarks"
+                android:src="@drawable/canclebtn"
+                android:textColor="@color/textColorPrimary" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/remarks_height"
+                android:gravity="center"
+                android:id="@+id/foodOrder.addRemarksEditText"
+                android:hint="@string/recipe_remarks"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="@dimen/padding_drawable"
+                android:inputType="textMultiLine"
+                android:theme="@style/MyEditText"
+                android:layout_weight="0.43" />
+
+            <ImageView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.47"/>
+
+            <ImageButton
+                android:id="@+id/foodOrder.RemarksBtn"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1."
+                android:background="@color/headerColor"
+                android:onClick="onRemarks"
+                android:src="@drawable/rmks"
+                android:textColor="@color/textColorPrimary" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/foodOrder.linerLayout"
+            android:orientation="horizontal"
+            android:weightSum="4.40"
+            android:layout_marginTop="@dimen/drawer_margin_left2">
+            <ImageButton
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/arrow"
+                android:background="@color/headerColor"
+                android:textColor="@color/textColorPrimary"
+                android:id="@+id/foodOrder.BackBtn"
+                android:onClick="onBack"/>
+            <ImageView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"/>
+            <Button
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="PAX"
+                android:background="@color/headerColor"
+                android:textColor="@color/textColorPrimary"
+                android:id="@+id/foodOrder.PaxBtn"
+                android:onClick="onPax"/>
+            <ImageView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.13"/>
+            <!--<ImageButton-->
+            <!--android:layout_width="@dimen/zero_dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/lock_btn"-->
+            <!--android:background="@color/headerColor"-->
+            <!--android:textColor="@color/textColorPrimary"-->
+            <!--android:id="@+id/foodOrder.lockBtn"-->
+            <!--android:onClick="onLock"/>-->
+            <!--<ImageView-->
+            <!--android:layout_width="@dimen/zero_dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.10"/>-->
+
+            <ImageButton
+                android:id="@+id/foodOrder_saveBtn"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/headerColor"
+                android:onClick="onSave"
+                android:src="@drawable/savee"
+                android:textColor="@color/textColorPrimary" />
+
+            <ImageView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.13"/>
+
+
+            <ImageButton
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/closee"
+                android:background="@color/headerColor"
+                android:textColor="@color/textColorPrimary"
+                android:id="@+id/foodOrder.cancelBtn"
+                android:onClick="onCancel"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/order_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:layout_above="@id/foodOrder.relativeLayout"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/remarks_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_above="@id/foodOrder.relativeLayout"
+        />
+
+</RelativeLayout>

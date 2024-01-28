@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+  >
+
+    <TextView
+        android:id="@+id/tablenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/kotnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="#000"
+        android:layout_below="@+id/tablenum"
+        android:layout_alignLeft="@+id/tablenum"
+        android:layout_alignStart="@+id/tablenum"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="#000"
+        android:layout_alignTop="@+id/kotnumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="#000"
+        android:layout_below="@+id/kotnumber"
+        android:layout_alignLeft="@+id/kotnumber"
+        android:layout_alignStart="@+id/kotnumber"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="#000"
+        android:layout_below="@+id/item"
+        android:layout_alignLeft="@+id/item"
+        android:layout_alignStart="@+id/item"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="#000"
+        android:layout_below="@+id/qty"
+        android:layout_alignLeft="@+id/qty"
+        android:layout_alignStart="@+id/qty"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="#000"
+        android:layout_below="@+id/rate"
+        android:layout_alignLeft="@+id/rate"
+        android:layout_alignStart="@+id/rate"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/itemdescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="#000"
+        android:layout_below="@+id/update"
+        android:layout_alignLeft="@+id/update"
+        android:layout_alignStart="@+id/update"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

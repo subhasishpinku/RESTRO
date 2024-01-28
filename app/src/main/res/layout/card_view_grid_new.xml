@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/cardview_whhf"
+    android:layout_height="@dimen/cardview_whhf"
+    android:id="@+id/cardview1"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardElevation="@dimen/card_elevation"
+    card_view:cardMaxElevation="6dp"
+    card_view:cardBackgroundColor="@color/headerColor"
+    card_view:cardCornerRadius="@dimen/corner_radius"
+    >
+
+    <FrameLayout
+        android:id="@+id/frame_layout_item"
+        android:background="@drawable/rounded_corner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="@dimen/circle_whhhh"
+                android:layout_height="@dimen/circle_whhhh"
+                android:id="@+id/cardmenu.tableName"
+                android:background="@drawable/circle_green"
+                android:textSize="@dimen/buttonTextSize1"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="SP"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/cardmenu.tableCategory"
+                android:layout_below="@id/cardmenu.tableName"
+                android:layout_marginTop="@dimen/margin_between_two"
+                android:text="Content here"
+                android:textSize="@dimen/editTextSize"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/cardmenu.tableid"
+                android:layout_below="@id/cardmenu.tableCategory"
+                android:text="Content here"
+                android:textSize="0dp"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+</android.support.v7.widget.CardView>

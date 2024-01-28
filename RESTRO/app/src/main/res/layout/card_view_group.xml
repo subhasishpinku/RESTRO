@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/cardview_wh"
+    android:layout_height="@dimen/cardview_wh"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    card_view:cardElevation="@dimen/card_elevation"
+    card_view:cardMaxElevation="6dp"
+    card_view:cardBackgroundColor="@color/headerColor"
+    card_view:cardCornerRadius="@dimen/corner_radius">
+
+    <!--<FrameLayout
+        android:background="@drawable/rounded_corner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/group.relative">
+
+
+        <com.ebits.restro.activities.utils.tools.CircularImageView
+            android:layout_width="@dimen/drawer_circular_image2"
+            android:layout_height="@dimen/drawer_circular_image2"
+            android:src="@drawable/chicken_manchu"
+            app:civ_border_width="@dimen/drawer_civ_border"
+            app:civ_border_color="@color/textColorPrimary"
+            android:id="@+id/group.imageView"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:id="@+id/group.name"
+            android:layout_below="@id/group.imageView"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/checkboxTextSize"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Id"
+            android:id="@+id/group.id"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/zero_dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
